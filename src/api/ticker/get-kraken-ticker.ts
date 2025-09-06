@@ -1,6 +1,6 @@
 import axios from 'axios'
 import type { KrakenTickerResponse, TickerInfo } from './types.js'
-import { ASSET_MAPPING } from 'src/utils/asset-mapping.js'
+import { ASSET_MAPPING } from 'src/utils/kraken-asset-mapping.js'
 
 const TICKER_URL = process.env.KRAKEN_BASE_URL + '/public/Ticker'
 
