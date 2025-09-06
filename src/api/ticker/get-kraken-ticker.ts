@@ -37,7 +37,7 @@ export const getKrakenTicker = async (
       ask: parseFloat(tickerData.a[0]),
       volume: parseFloat(tickerData.v[1]),
     }
-  } catch (err: unknown) {
+  } catch (err) {
     if (err instanceof Error) {
       console.error('Could not get data', err.message)
     } else {
